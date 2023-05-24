@@ -178,7 +178,7 @@ class _OTPConfirmScreenState extends State<OTPConfirmScreen> {
                             labelText: 'New PIN',
                             suffixIcon: IconButton(
                               icon: Icon(
-                                _obscurePin ? Icons.visibility : Icons.visibility_off,
+                                _obscurePin ? Icons.visibility_off : Icons.visibility,
                                 color: Colors.purple,
                               ),
                               onPressed: () {
@@ -212,7 +212,7 @@ class _OTPConfirmScreenState extends State<OTPConfirmScreen> {
                             labelText: 'Confirm New PIN',
                             suffixIcon: IconButton(
                               icon: Icon(
-                                _obscureConfirmPin ? Icons.visibility : Icons.visibility_off,
+                                _obscureConfirmPin ? Icons.visibility_off : Icons.visibility,
                                 color: Colors.purple,
                               ),
                               onPressed: () {

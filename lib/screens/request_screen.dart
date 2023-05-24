@@ -186,7 +186,7 @@ class _RequestScreenState extends State<RequestScreen> {
                         int loanAmount = 0; // variable to store the loan amount entered by the user
 
                         return AlertDialog(
-                          title: Text('Enter Loan amount'),
+                          title: const Text('Enter Loan amount'),
                           content: TextField(
                             keyboardType: TextInputType.number,
                             decoration:  InputDecoration(

@@ -163,7 +163,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             labelText: 'PIN',
                             suffixIcon: IconButton(
                               icon: Icon(
-                                _obscurePin ? Icons.visibility : Icons.visibility_off,
+                                _obscurePin ? Icons.visibility_off : Icons.visibility,
                                 color: Colors.red,
                               ),
                               onPressed: () {

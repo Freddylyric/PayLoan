@@ -120,32 +120,32 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Divider(
+                  const SizedBox(height: 10),
+                  const Divider(
                     color: Colors.grey,
                     thickness: 1,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     'Your mobile money details',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: styles.primaryColor),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(storedValue ?? '', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: styles.primaryColor)),
-                          Text('Verified'), // Placeholder for name
+                          const Text('Verified'), // Placeholder for name
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: Colors.grey,
                         thickness: 1,
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                     ],
 
                   ),
