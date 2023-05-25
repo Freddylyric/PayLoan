@@ -160,7 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            labelText: 'PIN',
+                            labelText: 'PIN (5 digits)',
                             suffixIcon: IconButton(
                               icon: Icon(
                                 _obscurePin ? Icons.visibility_off : Icons.visibility,
@@ -175,10 +175,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           validator: (value) {
                             if (value!.isEmpty) {
-                              return 'Please enter your PIN';}
-                            // } else if (value.length != 4) {
-                            //   return 'PIN must be 4 digits';
-                            // }
+                              return 'Please enter your PIN';
+                            } else if (value.length != 5) {
+                              return 'PIN must be 5 digits';
+                            }
                             // Add any additional validation logic for the PIN here
                             return null;
                           },

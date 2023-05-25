@@ -59,15 +59,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
       body: Center(
 
-          child: Column(
+          child: ListView(
 
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Column(
+                children: [
+
+
               SizedBox(height: 50,),
-              Divider(
-                thickness: 2.0,
-                color: Colors.blue[300],
-              ),
+
 
               Container(
 
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 10,),
               Divider(
                 thickness: 2.0,
-                color: Colors.blue[300],
+                color: Colors.grey[300],
               ),
               Container(
                 padding: const EdgeInsets.all(30),
@@ -106,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),const SizedBox(height: 30,),
                     Divider(
                       thickness: 2.0,
-                      color: Colors.blue[300],
+                      color: Colors.grey[300],
                     ),
                     const SizedBox(height: 20,),
                     // ElevatedButton(onPressed:(){
@@ -131,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
 
           )
+    ])
       ),
     );
   }
