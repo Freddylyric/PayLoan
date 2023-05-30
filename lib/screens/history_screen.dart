@@ -32,7 +32,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 Navigator.of(context).pop();
               },
             ),
-            title:  Text('Your Loan History', style: styles.blueBigText,),
+            title: const Text('Your Loan History', style: styles.blueBigText,),
           ),
           body: ListView.builder(
             itemCount: 1, // Placeholder for number of loans
@@ -40,8 +40,10 @@ class _HistoryScreenState extends State<HistoryScreen> {
               return Card(
                   margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: ListTile(
-                    title: Text(widget.userModel.balance.toString(), style: styles.blueSmallText,), // Placeholder for loan
-                    subtitle: Text(widget.userModel.outstandingLoan? ['due_on'], style: styles. blueSmallText,), // Placeholder
+                    title: Text('KES ${widget.userModel.outstandingLoan? ['due_amount']}', style: styles.blueSmallText,), // Placeholder for loan
+                    subtitle: Text('${widget.userModel.outstandingLoan? ['requested_at']}', style: styles. blueSmallText,), // Placeholder
+
+
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -53,7 +55,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                       // Navigate to loan details screen
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LoanDetailsScreen()),);
+                        MaterialPageRoute(builder: (context) => LoanDetailsScreen( loan: widget.userModel.outstandingLoan)),);
                     },
                   ));
 
